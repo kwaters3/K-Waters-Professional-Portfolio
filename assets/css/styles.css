@@ -22,7 +22,7 @@ h1 {
     font-size: 38px;
     padding: 5px;
     font-family: 'Rampart One', cursive;
-    text-shadow: 4px 4px 4px  #4f6b92;
+    text-shadow: 4px 4px 4px  #2c4e5fd0;
     background-color: rgba(194, 175, 225, 0.702);
 }
 
@@ -34,10 +34,6 @@ nav {
     font-family: 'Charmonman', cursive;
     font-size: 18px;
     
-}
-
-ul {
-    list-style-type: none;
 }
 
 a:link {
@@ -71,22 +67,33 @@ img {
 
 section {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
 }
 
-h2 {
+.section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section h2 {
   color: white;
-  width: 100px;
-  margin: 10px;
-  text-align:end;
-  font-size: 25px;
-}
-.vr {
-  border-right: 5px solid black;
-  margin-right: 90%;
+  width: 125px;
+  padding: 20px;
+  text-align: end;
+  font-size: 30px;
 }
 
-.about-me, 
-.work,
-.contact-me,
-.resume 
+.section p {
+  padding: 25px;
+  margin: 5px;
+  color: #f1f1f1;
+  font-size: smaller;
+  font-family: 'Rajdhani', sans-serif;
+  ;
+}
+
+.vr {
+  border-right: 6px groove rgb(61, 31, 212);
+}
+
