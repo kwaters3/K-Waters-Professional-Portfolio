@@ -74,9 +74,9 @@ nav li {
 
 /* Hello Sunshine text */
 .container {
+    display: inline-flex;
     position: relative;
     text-align: center;
-    color: whitesmoke;
  
 }
 /* Align the bottom-right text on to beach image - text image */
@@ -87,9 +87,44 @@ nav li {
   right: 30px;
   font-size: 30px;
   font-family: 'Pacifico', cursive;
+  color: whitesmoke;
   background-color: #2c4e5fd0;
   border: groove;
   padding: 5px;
 }
 
+h2 {
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  width: 135px;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: end;
+}
+
+/* Line between H2 & sections */
+.vr {
+  display: inline-flex;
+  align-self: stretch;
+  border-right: 6px groove rgb(61, 31, 212);
+}
+
+.section1,
+.section2,
+.section3,
+.section4  {
+  display: flex;
+  flex-direction: row;
+}
+
+.section1 p {
+  padding: 25px;
+  margin: 5px;
+  margin-top: 10px;
+  color: whitesmoke;
+  font-size: small bold;
+  font-family: 'Rajdhani', sans-serif;
+}
 
