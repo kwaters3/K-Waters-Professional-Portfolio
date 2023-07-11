@@ -145,7 +145,7 @@ h2 {
   flex-direction: row;
 }
 
-img {
+.section2 img {
   width: 550px; 
   height: 200px; 
   padding: 5px;
