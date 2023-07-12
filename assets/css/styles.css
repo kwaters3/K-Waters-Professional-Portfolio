@@ -110,10 +110,6 @@ nav li {
   border-top: 8px groove rgb(61, 31, 212);
 }
 
-
-/* start here ----check out Student Act Solved - Need to recreate each section, especially for the images!!! when putting text on the image - use the info above - IT IS CORRECT NOW!*/
-
-
 h2 {
   display:flex;
   flex-direction:column;
@@ -128,23 +124,22 @@ h2 {
 /* Line between H2 & sections */
 .vr {
   display: inline-flex;
+  flex-direction: row;
   align-self: stretch;
+  padding: 20px;
   border-right: 6px groove rgb(61, 31, 212);
 }
 
 .section1,
 .section2,
 .section3,
-.section4  {
+.section4 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  
 }
 
 .section1 p {
-  display: inline-flex;
-  flex-direction: row;
   padding: 25px;
   margin: 5px;
   margin-top: 10px;
@@ -168,6 +163,7 @@ h2 {
   flex: 2;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   font-family: 'Charmonman', cursive;
   font-size: 20px;
@@ -178,3 +174,20 @@ article li {
   width: 200px;
 }
 
+article a:link {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+article a:visited {
+  color: #b387f0f1;
+  background-color: transparent;
+  text-decoration:underline;
+}
+
+article a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
