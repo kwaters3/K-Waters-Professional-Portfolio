@@ -108,13 +108,14 @@ nav li {
   margin-top: 25px;
 }
 
+/* Line between each section */
 .custom-hr {
   border: none;
   border-top: 8px groove rgb(61, 31, 212);
 }
 
 
-
+/* Header for each section */
 h2 {
   display:flex;
   flex-direction:column;
@@ -135,6 +136,7 @@ h2 {
   border-right: 6px groove rgb(61, 31, 212);
 }
 
+/* Each sections flex properties */
 .section1,
 .section2, 
 .section3,
@@ -144,6 +146,7 @@ h2 {
   align-items: center;
 }
 
+/* About me paragraph */
 .section1 p {
   padding: 25px;
   margin: 5px;
@@ -153,6 +156,7 @@ h2 {
   font-family: 'Rajdhani', sans-serif;
 }
 
+/* My work section flex properties */
 .mywork {
   flex: 1;
   display: flex;
@@ -160,9 +164,8 @@ h2 {
   justify-content: space-evenly;
 }
 
+/* Images in work section */
 .card1 {
-  display: flex;
-  flex-direction: column;
   flex: 0 0 1100px;
   padding-top: 50px;
 }
@@ -179,11 +182,12 @@ h2 {
 }
 
 
-
+/* Work image hover */
 .image-container:hover img {
   opacity: 0.5; 
 }
 
+/* 5 work images flex properties */
 .container1{
   display: flex;
   position: relative;
@@ -250,7 +254,7 @@ h2 {
   padding-left: 190px;
 }
 
-
+/* contact me and resume section */
 .section3 article,
 .section4 article {
   flex: 3;
@@ -262,6 +266,7 @@ h2 {
   font-size: 30px;
 }
 
+/* contact me and resume links */
 article li {
   display: inline-block;
   width: 200px;
@@ -285,9 +290,73 @@ article a:hover {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-  main,
-  nav {
-    flex-direction: column;
+/* Media Queries  */
+@media only screen and (max-width: 912px) {
+  .headshot {
+    height: 250px;
+    margin-top: 10px;
+  }
+
+  .bottom-right {
+    font-size: 25px;
+  }
+
+  .section1 p {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  nav li {
+    margin-left: 15px;
+  }
+
+  nav li a {
+    font-size: 14px;
+  }
+
+  .container1,
+  .container2,
+  .container3,
+  .container4,
+  .container5 {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .section3 article,
+  .section4 article {
+    font-size: 15px;
+  }
+
+  .section3 article li {
+    width: auto;
+    margin: 5px;
+  }
+
+  h2{
+    font-size: smaller;
+    padding-right: 10px;
+    text-align: end;
+   }
+
+  .vr {
+    padding: 10px 1px;
+  }
+
+}
+/* Media queries for images in work section */
+@media only screen and (max-width: 1500px) {
+  .card1,
+  .card {
+    flex: 0 0 100%; 
+    padding: 30px; 
   }
 }
+
+
